@@ -9,6 +9,7 @@ import grails.test.mixin.TestFor
 class StoreControllerTests {
 
     void testSomething() {
-       fail "Implement me"
+        controller.index()
+       assert 'Welcome home, mother-puncher!' == response.text
     }
 }

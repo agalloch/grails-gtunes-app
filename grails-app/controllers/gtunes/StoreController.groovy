@@ -2,5 +2,7 @@ package gtunes
 
 class StoreController {
 
-    def index() { }
+    def index() {
+        render 'Welcome home, mother-puncher!'
+    }
 }
