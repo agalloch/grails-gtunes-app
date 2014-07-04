@@ -9,4 +9,9 @@ class Song {
         title blank: false
         artist blank: false
     }
+
+    @Override
+    String toString() {
+        return title
+    }
 }

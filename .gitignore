@@ -30,6 +30,8 @@
 /target
 
 .idea/
+.settings/
 *.iml
 *.class
 classes/
+out/
