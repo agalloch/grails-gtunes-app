@@ -26,7 +26,10 @@ environments {
     production {
         dataSource {
             dbCreate = "update"
-            url = "jdbc:h2:prodDb;MVCC=TRUE;LOCK_TIMEOUT=10000"
+            url = "jdbc:mysql://localhost/gTunes"
+            driverClassName = "com.mysql.jdbc.Driver"
+            username = "grails"
+            password = "grails"
             pooled = true
             properties {
                maxActive = -1
