@@ -5,6 +5,11 @@ class Album {
     Date yearReleased
 
     static hasMany = [songs: Song]
+    static belongsTo = [artist: Artist]
+
+    static mapping = {
+        songs cascade: 'delete'
+    }
 
     @Override
     String toString() {

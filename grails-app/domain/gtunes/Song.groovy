@@ -3,11 +3,14 @@ package gtunes
 class Song {
     String title
     String artist
-    Album album
+    Integer duration
+
+    static belongsTo = Album
 
     static constraints = {
         title blank: false
         artist blank: false
+        duration min: 1
     }
 
     @Override
